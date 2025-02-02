@@ -1,0 +1,5 @@
+.remote-video__watermark,
+#page-wrap,
+.caption__buttons, .remote-video__likes {
+  display: none !important;
+}

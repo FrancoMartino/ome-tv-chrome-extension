@@ -1,0 +1,41 @@
+{
+	"name": "Ome.TV",
+	"description": "Extensión para mejorar la experiencia en Ome.TV",
+	"version": "1.0.0",
+	"manifest_version": 3,
+	"permissions": [
+		"scripting",
+		"activeTab",
+		"storage"
+	],
+	"host_permissions": [
+		"https://ome.tv/*"
+	],
+	"action": {
+		"default_popup": "popup.html",
+		"default_icon": {
+			"16": "images/icon16.png",
+			"48": "images/icon48.png",
+			"128": "images/icon128.png"
+		}
+	},
+	"icons": {
+		"16": "images/icon16.png",
+		"48": "images/icon48.png",
+		"128": "images/icon128.png"
+	},
+	"content_scripts": [
+		{
+			"matches": [
+				"https://ome.tv/*"
+			],
+			"js": [
+				"scripts/utils.js",
+				"scripts/welcome.js"
+			],
+			"css": [
+				"styles.css"
+			]
+		}
+	]
+}

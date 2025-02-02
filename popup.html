@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ome.TV Extension Popup</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-gray-100 flex items-center justify-center h-screen">
+    <div class="bg-white p-6 rounded-lg shadow-xl w-96 flex flex-col gap-4">
+      <div class="flex justify-center">
+        <img src="images/logo.svg" alt="logo" />
+      </div>
+      <!-- Línea divisoria -->
+      <hr class="border-t border-gray-300" />
+      <div class="flex flex-col gap-2">
+        <label class="text-gray-700 font-semibold" for="welcomeMessageInput">
+          Welcome Message:
+        </label>
+        <textarea
+          id="welcomeMessageInput"
+          placeholder="Enter a welcome message..."
+          class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-200 resize-none"
+          rows="4"
+        ></textarea>
+      </div>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>
