@@ -1,6 +1,6 @@
 {
 	"name": "Ome.TV",
-	"description": "Extensión para mejorar la experiencia en Ome.TV",
+	"description": "Extension to improve the UX of Ome.TV",
 	"version": "1.0.0",
 	"manifest_version": 3,
 	"permissions": [
